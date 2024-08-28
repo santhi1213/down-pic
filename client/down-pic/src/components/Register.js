@@ -17,7 +17,8 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/register', {
+      const response = await axios.post('photos-website-react.vercel.app
+', {
         username,
         password,
       });
