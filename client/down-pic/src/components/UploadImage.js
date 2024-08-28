@@ -20,7 +20,7 @@ const UploadImage = () => {
     const token = localStorage.getItem('token');
   
     try {
-      await axios.post('http://localhost:5000/upload', formData, {
+      await axios.post('photos-website-react.vercel.app/upload', formData, {
         headers: {
           Authorization: token,
         },
