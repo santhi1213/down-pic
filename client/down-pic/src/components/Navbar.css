@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-left: 5%;
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin-top: 2%;
+    margin-left: 28%;
+}
+.nav-items{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.logout{
+    background-color: rgb(251, 123, 123);
+    border: none;
+    outline: none;
+    width: 100px;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 450%;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.title{
+    font-size: 30px;
+}

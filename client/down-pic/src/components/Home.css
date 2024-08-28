@@ -1,0 +1,26 @@
+.home-title{
+    text-align: center;
+    font-size: 40px;
+}
+.search-bar{
+    width: 35%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 32%;
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.search-btn{
+    background-color: lightcoral;
+    width: 120px;
+    height: 51px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: -120px;
+    cursor: pointer;
+}

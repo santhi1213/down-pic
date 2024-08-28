@@ -1,0 +1,34 @@
+.container{
+    text-align: center;
+    width: 30%;
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2%;
+}
+.heading{
+    color: white;
+    font-size: 38px;
+}
+.input{
+    width: 80%;
+    height: 40px;
+    margin: 18px 0px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 5%;
+    outline: none;
+}
+.register{
+    width: 40%;
+    background-color: burlywood;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px;
+    height: 40px;
+    border-radius: 10px;
+}
