@@ -8,17 +8,11 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-app.use(cors(
-  {
-    origin : ['https://photos-website-react-2qnb.vercel.app/'],
-    methods : ['POST', 'GET'],
-    credentials : true
-  }
-));
+app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/down-picc', {
+mongoose.connect('mongodb://127.0.0.1:27017/down-picc', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

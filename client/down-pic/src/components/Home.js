@@ -9,7 +9,7 @@ const Home = ({ image }) => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const result = await axios.get('photos-website-react.vercel.app/images');
+      const result = await axios.get('http://localhost:5000/images');
       setImages(result.data);
     };
     fetchImages();
@@ -17,7 +17,7 @@ const Home = ({ image }) => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    const result = await axios.get(`photos-website-react.vercel.app/search?query=${query}`);
+    const result = await axios.get(`http://localhost:5000/search?query=${query}`);
     setImages(result.data);
   };
 
@@ -25,7 +25,7 @@ const Home = ({ image }) => {
 
   const downloadImage = (imageId, imageName) => {
     const link = document.createElement('a');
-    link.href = `photos-website-react.vercel.app/image/${imageId}`;
+    link.href = `http://localhost:5000/image/${imageId}`;
     link.download = imageName;
     document.body.appendChild(link);
     link.click();
@@ -47,7 +47,7 @@ const Home = ({ image }) => {
         <div style={{display:'grid', gridTemplateColumns:'repeat(5, 1fr)', padding:'3%', textAlign:'center'}}>
             {images.map(image => (
             <div key={image._id} style={{padding:'2%'}}>
-                <img src={`photos-website-react.vercel.app/image/${image._id}`} alt={image.name} style={{width:'250px',height:'250px', borderRadius:'20px', cursor:'pointer'}} onClick={()=> downloadImage(image._id,image.name)} />
+                <img src={`http://localhost:5000/image/${image._id}`} alt={image.name} style={{width:'250px',height:'250px', borderRadius:'20px', cursor:'pointer'}} onClick={()=> downloadImage(image._id,image.name)} />
                 <h3>{image.name}</h3>
             </div>
             ))}
